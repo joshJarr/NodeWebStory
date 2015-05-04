@@ -1,0 +1,120 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Specification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;margin:30px 0 0;padding:0;background:#fff}#wrapper{padding:20px}li{font-size:110%}li li{font-size:100%}li p{font-size:100%;margin:.5em 0}h1{color:#000}h2{color:#111}h3{color:#111;margin:0}h4{color:#111}h5{color:#111}h6{font-size:1em;line-height:1.5em;margin:1.5em 0}body,p,td,div{color:#111;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;word-wrap:break-word}a{color:#0d6ea1;text-decoration:none;-webkit-transition:color 0.2s ease-in-out;-moz-transition:color 0.2s ease-in-out;-o-transition:color 0.2s ease-in-out;-ms-transition:color 0.2s ease-in-out;transition:color 0.2s ease-in-out}a:hover{color:#3593d9}body{font-size:15px;line-height:21px;margin:0 auto}h1{font-size:37px;line-height:42px;margin-top:42px;margin-bottom:21px}h2{font-size:27px;line-height:42px;margin-top:42px;margin-bottom:21px}h3{font-size:20px;line-height:21px;margin-top:21px;margin-bottom:21px}h4{font-size:20px;line-height:21px;margin-top:21px;margin-bottom:21px}p,ul,ol,pre,table,blockquote{margin-top:21px;margin-bottom:21px}hr{border:1px solid;margin:-1px 0}ul ul,ol ol,ul ol,ol ul{margin-top:0;margin-bottom:0}b,strong,em,small,code{line-height:1}.footnote{color:#0d6ea1;font-size:.8em;vertical-align:super}#wrapper img{max-width:100%;height:auto}dd{font-size:1em;margin-bottom:1em}li>p:first-child{margin:0}ul ul,ul ol{margin-bottom:.4em}caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr{border-spacing:0}table{border:1px solid rgba(0,0,0,0.25);border-collapse:collapse;display:table;empty-cells:hide;margin:-1px 0 1.3125em;padding:0;table-layout:fixed}caption{display:table-caption;font-weight:700}col{display:table-column}colgroup{display:table-column-group}tbody{display:table-row-group}tfoot{display:table-footer-group}thead{display:table-header-group}td,th{display:table-cell}tr{display:table-row}table th,table td{font-size:1.1em;line-height:1.3;padding:.5em 1em 0}table thead{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-bottom:1px solid rgba(0,0,0,0.2)}table tbody{background:rgba(0,0,0,0.05)}table tfoot{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-top:1px solid rgba(0,0,0,0.2)}figure{display:inline-block;overflow:hidden;position:relative;margin:1em 0 2em}figcaption{font-style:italic;text-align:center;background:white;color:#666}.poetry pre{display:block;font-family:Georgia,Garamond,serif !important;font-size:110% !important;font-style:italic;line-height:1.6em;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif !important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}blockquote p{font-size:110%;font-style:italic;line-height:1.6em}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;position:relative;vertical-align:super}sub{vertical-align:sub;top:-1px}p,h5{font-size:1.1429em;line-height:1.3125em;margin:1.3125em 0}dt,th{font-weight:700}table tr:nth-child(odd),table th:nth-child(odd),table td:nth-child(odd){background:rgba(255,255,255,0.06)}table tr:nth-child(even),table td:nth-child(even){background:rgba(200,200,200,0.25)}@media print{body{font-size:13px !important}img,table,figure{page-break-inside:avoid}#wrapper{background:#fff;color:#303030;padding:10px;position:relative;text-indent:0}}@media screen{.inverted{background:#252a2a}.inverted #wrapper{background:#252a2a;color:#eee}.inverted hr{border-color:#333f40 !important}.inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dt,.inverted dd{color:#eee}.inverted pre{background:#ccc}.inverted pre code{color:#111}.inverted table{background:none}.inverted table tr:nth-child(odd),.inverted table td:nth-child(odd){background:none}.inverted a{color:#acd1d5}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eee}code span::selection{background-color:rgba(0,0,0,0.7) !important;color:#eee !important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}}
+
+@media print{
+#generated-toc-clone,#generated-toc{display:none!important}
+}
+#generated-toc-clone li.missing,#mkreplaced-toc li.missing{list-style-type:none!important}#generated-toc-clone li, #mkreplaced-toc li{list-style-type:upper-roman}#generated-toc-clone li li, #mkreplaced-toc li li{list-style-type:decimal}#generated-toc-clone li li li,#mkreplaced-toc li li li{list-style-type:decimal-leading-zero}#generated-toc-clone li li li li,#mkreplaced-toc li li li li{list-style-type:lower-greek}#generated-toc-clone li li li li li,#mkreplaced-toc li li li li li{list-style-type:disc}#generated-toc-clone li li li li li li,#mkreplaced-toc li li li li li li{list-style-type:square}
+</style>
+
+</head>
+<body class="normal firstload">
+  <div id="wrapper">
+      <h1 id="specificationforsimontheunicornsmagicaladventure">Specification For &quot;Dream; the adventure&quot;</h1>
+
+<h2 id="analysis">Analysis</h2>
+
+<p>The initial aim for my project is to create and represent a dream using an artistic and minimalistic design to generate interest and raise awareness of the human brain's ability to generate scenes and environments from simple memories. The reason I want to raise awareness for this strange activity is due to the increasing population of the western world who are under a great deal of stresses and strains and therefore don't tend to experience much of the REM sleep that is required for dreaming. Essentially the artwork is designed to inadvertently raise awareness for the lack of a persons sleep; an interesting concept due to the amount of damage sleep deprivation can do to a person. A lack of sleep can be directly linked to a difficulty concentrating and people making simple mistakes; therefore in my game I wish to create simple challenges that require a person to concentrate and remember routes and paths taken as they progress through the game. I also wish to create a story that can loop forever, helping generate the feel and function of a real dream.</p>
+
+<p>The idea is to create a piece of artwork to be displayed in a gallery, be it physical or online. Therefore to allow for it to be show cross-platform the code and functionality must be designed for and then tested on multiple platforms, the main ones I will be focusing on are the latest updates for Macintosh and Windows as these are the systems most of my audience use. All browsers would also ideally be supported, and I will initially aim to be able to cover the four most popular, Google chrome, Safari, Firefox, and Internet Explorer. The reasoning behind making the game suitable cross platform is because of the audience and ways in which it will be displayed.
+
+Audience:
+My primary audience is anyone with an interest in the subject. A large portion of these people would be academics, researchers, and students similar to myself. This wide audience could make difficult to keep the attention and interest of everyone, therefore I aim to use a strong narrative and art system to keep a viewer playing.
+
+K.I.S.S:
+Keep It Simple Stupid. Keeping my game simple is important. I don't want masses and masses of text as reading it could become monotonous to allot of viewers and seriously disrupt the flow of the game. I would like my viewers to be able to play the game almost in 'autopilot' mode, relying on simple titles and images to provide information and narrative.</p>
+
+
+<h2 id="design">Design</h2>
+
+<h3 id="thenarrative">The Narrative</h3>
+
+<p>The player plays as a 'dream world version' of themselves. The whole game will be in first person, helping generate the feeling of individuality and helping to achieve my aim; to make the user relate to their own sleeping and dreaming pattern. The user will pick out decisions that will lead down certain paths, however the user cannot 'lose' or 'die' as they simple 'wake up' or respawn at the start again, having to remember the decisions of their previous encounter, this is where the concentration and memory aspect come into play, two abilities affected by sleep deprivation. </p>
+<p>The game starts from the user 'waking up' in a foreign land, similar to most real life dreams. The player is not directly told they are in a dream, therefore they work it out themselves when playing, also an aspect which is similar to a real life dream. A plain and simple artwork combines with simple narrative with harsh consequences creates an eerie and almost unnatural feel to the play, this is also similar to most dreams, as many people experience a familiarity to the environments in their own dream, probably because of the input of the subconscious. Therefore a familiar environment of a beach has been selected for the dream, and due to the simplistic design allot of the scene is left to the viewers imagination, making the area feel more individual to the player. Obvious and clear areas are used, such as forests, mountains, and deserts, this helps create a further sense of familiarity with the scenes, these clearly stated zones will also help prevent viewers feeling lost in the environment. </p>
+<p>the goal of the dream is simply to be woken up by the alarm, however the player is not told this and has to work it out themselves. Every time the player 'dies' in the dream causes them to wake up, and then restart the dream once then fall asleep, meaning the goal is to get to the end with as little interrupted sleep as possible. Waking up while sleeping at night is inevitable, however by concentrating and paying attention to their previous action the player can help prevent themselves from waking up too often in the game and get the best sleep. Restarting back to the beginning will also cause mild to extreme frustration, especially if the player can already made the same mistake before, this frustration in combination with the test of memory and concentration is exactly the opposite feeling and actions of sleeping and dreaming creating the contrast needed to make the viewer to reflect of their own sleeping patterns. A simple narrative of exploring the environment and surviving is used allowing users to concentrate of the pathways they take, however difficulty in the game comes when certain pathways lead back to other pathways. Essentially the game is not linear and there are multiple ways of completing it, however without knowing this the player may spend a long time remembering the longest route around when there is a much shorter route; this helps reward the players for being daring and taking risks. To generate a eerie feel to the game strange creatures such as bears and an unknown entity thats is encounterd but never visually seen, only herd, this will also generate a curiosity of what these creatures are, and this is answerd at the end of the game.</p>
+<p>As previously mentioned a simplistic design and minimalistic layout is used to allow the intervention of the players imagination, it also allows the story to be rememberd easily as there is no infomation overload, aiding the compleation. I did this as I wanted the dificulty to come from the similarity of story componants and not similarity of the pages look or feel. The colour scheme is also used to help represent a dream, as it is thought that people dream in black and white. Therefore I have chosen to use shades of brown to represent this, color is only used in exteme conditions, such as when the user fails (to help memory of the area) and at the end of the game as a sort of 'reward'. Fadeing the pages in are also direct reprersenting of a dream, creating a 'soft' feel, similar to the idea of a person drifting through the game as they would through </p>
+
+
+<h3 id="routes">Routes</h3>
+
+<p>My web routes are as follows:</p>
+
+<pre><code>- / - Slash or empty key will take the user to the start page. This allows for simple navagation taking the user straight to the beguinning page once the project is opned. There are no instructional or introductorial pages for a reason; this is due to the representation of a dream, and helps add a sense of cutiosity to the story. The pages will be identifiable by key names, these will be appropriate to the page, ie the page involving traveling to the forest would have the key of 'forest', this to to help prevent confusion when creating the pages and reduce potential errors (importance for this explained in next paragraph). A 404 page will be created and used, however it will be plain and blank with simple text; this is so because when installing it in a gallery technitions would need to know when and if the page is broken, therefore styling the 404 page would make this difficult. Also simple text with the error display would also allow for a technition to fix or report the error. Ideally the user will never see the 404 page as I aim to make the story as functional and flawless as possible, to achieve this allot of testing would be done. 
+
+<h3 id="usage">Usage</h3>
+
+<p>It is essential that the pages work as they are suppose to, installing the story in a gallery means little editing can be done and once the story breaks it won't work until sombody comes allong to fix it. Because of this the pages need to be as air tight as possible, the codeing also has to be explained and annotated approprietly allowing for somebody to re-run or fix the story if nessesary.
+</code></pre></p>
+
+<h2 id="implementation">Implementation</h2>
+
+<ul>
+<li><p>22/01/2014: Creation of simple story using plain text to distinguish between scenes. This allows easy debugging and testing of the elements.</p></li>
+<li><p>23/01/2014: Addition of more complicated json artifacts; addition of a description and names.</p></li>
+<li><p>24/01/2014: Fixing bug issues between the json documents and controlling scripts.</p></li>
+<li><p>27/01/2014: Creation of the HTML template to display the json elements.</p></li>
+<li><p>27/01/2014: Implementing CSS and styling to the HTML for easy display helping with debugging</p></li>
+<li><p>27/01/2014: Editing the CSS using my colour schemes and art plan to make the display both attractive and functional.</p></li>
+<li><p>28/01/2014: Few tests carried out by myself using mac operating system and google chrome; sucsess</p></li>
+<li><p>28/01/2014: Additional functionality tests in the main web browsers, all succsessful.</p></li>
+<li><p>02/02/2014: Functionality test on Windows8 x64, test succsessfull.</p></li>
+<li><p>02/02/2014: Insert propper vocabulary and text.</p></li>
+<li><p>03/02/2014: Insert artwork and images into story</p></li>
+<li><p>03/02/2014: Final review</p></li>
+<li><p>03/02/2014: bug fix; missing destination in json file</p></li>
+<li><p>03/02/2014: Fix spelling issues and placement</p></li>
+
+</ul>
+
+<h2 id="testing">Testing</h2>
+
+<p>To test my project I will show fellow students my story and ask them to comment on it and ask them these questions:</p>
+<p>What do you think of the design? Did you encounter any bugs?</p>
+<p>Did you get/ understand the story?</p>
+<p>Did you complete the story?</p>
+<p>And finally are there any other points questions or comments about my story?</p>
+
+<p>
+James:
+Theme and background are decent, like the minimalistic feel.
+Understood the story; Story is exciting and intreaging
+Compleated story, took 4 minuets.
+Issue; 404 page 'bear' (now fixed)
+</p>
+<p>
+dan:
+Throughly enjoyed the concept of a dream and liked the clean design, text can be hard to read due to the colours (now fixed, changed text to a darker colour)
+several confusion with the buttons (Now fixed, buttons centerd at the bottom of the page)
+Spelling hungery? (now fixed)
+compleated in 7 minuets
+</p>
+<p>
+Ed:
+Cool narative, repetative storyline
+Could do with some distinctions with the buttons (Now fixed)
+Understood the dream storyline
+Compleated in 2 minuets
+</p>
+<p>
+Lok:
+Enjoyable.(storyline)
+Liked artwork, no bugs
+yeah, dreams
+yeah (took 4 minuets)
+ynah, I liked it
+(Thanks for the constructive feedback Lok..)
+
+From my feedback it is clear that there where a few bugs which have now been resolved. Also it takes on adverage of 4 minuets to compleate my game; this seems like a good time cosidering too long will cause the user to get flustrated and quit, and too little will cause the user to not become immersed and not focus on the question of sleeping and dreams.
+</p>
+
+<!-- ##END MARKED WRAPPER## -->
+    </div>
+</body>
+</html>

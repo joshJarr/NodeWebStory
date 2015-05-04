@@ -1,0 +1,94 @@
+<html>
+
+	<head>
+
+	<title>{{name}}</title>
+
+<link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
+
+	</head>
+
+<style>
+*{
+	background-color:#CDB3B2;
+	text-decoration: none;
+}
+
+h1{
+	font-size:60px;
+	color:#342E2E;
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+	letter-spacing: 20px;
+	width:100%;
+	margin-top: 2px;
+	position:fixed;
+	text-align:center;
+}
+p{
+	font-size:30px;
+	color:#342E2E;
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+	letter-spacing: 10px;
+	width:100%;
+	margin-top: 150px;
+	position:fixed;
+	text-align:center;
+}
+ul{
+	font-size:35px;
+	color:#342E2E;
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
+	letter-spacing: 10px;
+	width:100%;
+	top:65%;
+	position:fixed;
+}
+li{
+	margin: 0 0 30px 0;
+	list-style-type: none;
+	text-align:center;
+}
+
+#image{
+	width: 100%;
+	height: 40%;
+	position: fixed;
+	top:20%;
+
+}
+
+
+</style>
+
+	<body>
+
+		<h1>{{name}}</h1>
+		<p>{{description}}  </p>
+		
+		 <div id = "image"> 
+		 	<img src ="images/{{image}}.png" height ="100%" width="100%"> 
+		 </div>
+		
+
+		{% if exits %}
+
+			<ul>
+
+				{% for exit in exits %}
+
+					<li>
+						<a href="/{{exit.destination}}" title = "Go {{exit.destination}}!" style="color: #342E2E">{{exit.text}}</a>
+						
+					</li>
+				{% endfor %}
+
+			</ul>
+
+		{% endif %}
+
+	</body>
+
+</html>

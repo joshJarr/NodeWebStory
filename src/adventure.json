@@ -1,0 +1,312 @@
+{
+
+	"locations":
+	{
+		"start": {
+			"name": "Where am i?",
+            "description": "How did I get here?",
+            "description_template": "intro",
+            "actors": [],
+			"exits":[
+				{"destination": "map", "text": "Dig around in the sand." },
+				{"destination": "peaks", "text": "Explore the shoreline." },
+				{"destination": "wait", "text": "Do nothing." }
+			]
+
+		},
+
+		"map": {
+			"name": "I found a map buried in the sand...",
+            "description": "It was laid just under the surface 5 meters ahead of me. Almost like somebody wanted me to find it..",
+            "description_template": "second page",
+            "actors": [],
+			"exits":[
+				{ "destination": "forest", "text": "I'll head into the forest." },
+				{ "destination": "beach", "text": "I'll keep following the shoreline." },
+				{ "destination": "desert", "text": "There is a large open sandy desert not too far away.. I can follow the map there." },
+				{ "destination": "mountians", "text": "I'll head towards the mountians, following the map." }
+			]
+
+		},
+
+		"peaks": {
+			"name": "I see peaks",
+            "description": "Wandering up the shoreline, I can see a break in the trees and the tips of close mountians behind.",
+            "description_template": "3 page",
+            "actors": [],
+			"exits":[
+				{ "destination": "forest", "text": "I'll head inland into the forest." },
+				{ "destination": "mountians", "text": "I'll head towards those mountians." },
+				{ "destination": "beach", "text": "I'll keep walking around the beach." }
+			]
+
+		},
+
+		"wait": {
+			"name": "Nothing seems to be happening",
+            "description": "The longer I sit here, the more I try and remember...",
+            "description_template": "4 page",
+            "actors": [],
+			"exits":[
+				{ "destination": "start", "text": "But I keep asking the same questions..." }
+			]
+
+		},
+
+		"beach": {
+			"name": "What was that?",
+            "description": "It came from the distance, a dark screaching noise",
+            "actors": [],
+			"exits":[
+				{ "destination": "forest", "text": "run and hide in the forest" },
+				{ "destination": "fn", "text": "Follow the noise" }
+			]
+
+		},
+		
+		"forest": {
+			"name": "These trees are huge.",
+            "description": "And it's starting to get dark very quickly",
+          
+            "actors": [],
+			"exits":[
+				{ "destination": "cliff", "text": "I'll Explore the low light wood." },
+				{ "destination": "fire", "text": "I'll make a shelter and sleep for the night." }
+
+			]
+
+		},
+				"fire": {
+			"name": "Should I sleep?",
+            "description": "I could make a fire before I sleep, that would keep me warm",
+            
+            "actors": [],
+			"exits":[
+				{ "destination": "bear", "text": "I'll make a fire" },
+				{ "destination": "hunger", "text": "I think I'll just sleep till morning" }
+			]
+
+		},
+
+			"desert": {
+			"name": "This was a bad idea..",
+            "description": "The heat is unbearable..",
+           
+            "actors": [],
+			"exits":[
+				{ "destination": "peaks", "text": "I'll head back despite the progress i've made to get here.." },
+				{ "destination": "melt", "text": "I need to persevere into the desert." }
+
+			]
+
+		},	
+
+				"melt": {
+			"name": "I can't move, its too hot.",
+            "description": "......",
+           
+            "actors": [],
+			"exits":[
+				{"destination": "death", "text": "Die due to heat exhaustion.." }
+			]
+
+		},
+
+
+		"death": {
+			"name": "I did not survive,",
+            "description": "And I hope not to go back there again..",
+           
+            "actors": [],
+			"exits":[
+				{"destination": "start", "text": "Go back to sleep.." }
+			]
+
+		},
+
+
+		"mountians": {
+			"name": "It's extremely cold up here",
+            "description": "and i'm exhausted from walking up here..",
+        
+            "actors": [],
+			"exits":[
+				{"destination": "snowBear", "text": "I'll explore the mountians" },
+				{"destination": "beach", "text": "I should venture back to the beach" }
+			]
+
+		},
+
+
+		"snowBear": {
+			"name": "What's that moving in the distance?",
+            "description": "Its a bear...",
+          
+            "actors": [],
+			"exits":[
+				{"destination": "fight", "text": "I'll attack the bear, I could use its pelt to keep me warm." },
+				{"destination": "forest", "text": "I'll run back to the forest, there's no way I'm taking on a bear!" }
+			]
+
+		},
+
+		"fight": {
+			"name": "Charging the bear?",
+            "description": "this probably wasn't my best idea.. Now the bear is ripping open my abdomen.",
+       
+            "actors": [],
+			"exits":[
+				{"destination": "death", "text": "I'm bear food now.." }
+			]
+
+		},
+
+		"cliff": {
+			"name": "I can bearly see walking around at night..",
+            "description": "I stumble on a rock, too dark to see, where has the floor gone?",
+        
+            "actors": [],
+			"exits":[
+				{"destination": "death", "text": "Its not till i'm falling I realise that I've fell off a seemingly endless cliff face." }
+			]
+
+		},
+
+		"bear": {
+			"name": "I drift off to sleep.",
+            "description": "Awoken by a black bear, I jump up, but it's too late",
+        
+            "actors": [],
+			"exits":[
+				{"destination": "death", "text": "The fire attracted that bear.. which is clawing away at my face" }
+			]
+
+		},
+
+		"fn": {
+			"name": "I follow the tracks into the forest.",
+            "description": "the journey seems to take forever",
+            "actors": [],
+			"exits":[
+				{"destination": "forest", "text": "I'll keep going" }
+			]
+
+		},
+
+
+		"hunger": {
+			"name": "I'm so hungry..",
+            "description": "I need to find food..",
+            "image": "hi.jpg",
+            "actors": [],
+			"exits":[
+				{"destination": "berries", "text": "I'll look around this area for food." },
+				{"destination": "follow", "text": "I'll keep following these suspicious footprints deeper into the forest" }
+			]
+
+		},
+		
+		"berries": {
+			"name": "FOOD!",
+            "description": "Here's a bush full of huge red berries!",
+            "actors": [],
+			"exits":[
+				{"destination": "eat", "text": "I'll collect them and eat some now but save the rest for later." },
+				{"destination": "river", "text": "I should keep moving, I don't trust random berries.." }
+			]
+
+		},
+
+		"eat": {
+			"name": "The berries are amazing!",
+            "description": "But I suddenly feel ill, a sharp pain radiates from my stomach.",
+            "actors": [],
+			"exits":[
+				{"destination": "death", "text": "poision berries..." }
+			]
+
+		},
+
+		"river": {
+			"name": "I come across rushing water",
+            "description": "A river full of fish!, I grab some sticks and manage to catch a few. I now feel much better.",
+            "actors": [],
+			"exits":[
+				{"destination": "StNoise", "text": "I keep moving through the forest." }
+			]
+
+		},
+		"follow": {
+			"name": "So hungry",
+            "description": "Yet I'm not stopping stumbling through the forest",
+            "actors": [],
+			"exits":[
+				{"destination": "StNoise", "text": "Keep on moving." }
+			]
+
+		},
+
+		"StNoise": {
+			"name": "What was that?",
+            "description": "That was a screaching noise, about 200 meters away",
+            "actors": [],
+			"exits":[
+				{"destination": "trip", "text": "I'm going to run away" },
+				{"destination": "alarm", "text": "I'll investigate" }
+			]
+
+		},
+
+		"trip": {
+			"name": "Ahh!",
+            "description": "My foot's stuck",
+            "actors": [],
+			"exits":[
+				{"destination": "death", "text": "I tripped, now there's a branch sticking out of my neck.." }
+			]
+
+		},
+
+		"alarm": {
+			"name": "The sound is getting louder and louder..", 
+            "description": "I'm getting closer, and the closer I get the louder the sound is.",
+            "actors": [],
+			"exits":[
+				{"destination": "wake", "text": "I'll keep going" }
+			]
+
+		},
+				"wake": {
+			"name": "The sound is unbearable!",
+            "description": "And the whole forest seems to be glowing",
+            "actors": [],
+			"exits":[
+				{"destination": "end", "text": "Keep going.." }
+			]
+
+		},
+
+		"end": {
+			"name": "Repetative beeping?",
+            "description": "Its 7am, time to get up",
+            "actors": [],
+			"exits":[
+				{"destination": "start", "text": "Go back to sleep" },
+				{"destination": "getUp", "text": "Wake up" }
+			]
+
+		},
+
+		"getUp": {
+			"name": "Good Morning"
+
+			
+
+		}
+
+
+	}
+
+
+
+}
