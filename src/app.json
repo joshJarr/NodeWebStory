@@ -1,0 +1,7 @@
+{
+  "name": "Node.js web story",
+  "description": "Node web story using jode.js hosted on Heroku",
+  "repository": "https://github.com/joshJarr/NodeWebStory",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"]
+}
