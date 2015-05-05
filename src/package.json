@@ -3,9 +3,6 @@
   "version": "0.1.3",
   "description": "My Node App Web Story",
   "main": "Main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "node",
     "app",
@@ -13,5 +10,11 @@
     "game"
   ],
   "author": "Josh Jarvis",
-  "license": "ISC"
+  "dependencies": {
+    "connect": "^3.3.5",
+    "cookie-session": "^1.1.0",
+    "serve-static": "^1.9.2",
+    "twig": "^0.8.2",
+    "ws-oop.js": "^1.0.0"
+  }
 }
