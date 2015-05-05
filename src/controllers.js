@@ -40,8 +40,8 @@ function respond(app, request, response, args)
 		router.triggerErrorListener('404', request, response);
 	}
 
-	response.write(msg);
-	response.end();
+	//response.write(msg);
+	//response.end();
 };
 
 
